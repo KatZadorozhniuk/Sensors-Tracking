@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Max_Vectors_Length__c</fullName>
+    <label>Max Vectors Length</label>
+    <summarizedField>Sensor_Event__c.Modulus_Vector_Length__c</summarizedField>
+    <summaryForeignKey>Sensor_Event__c.Sensor__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>
