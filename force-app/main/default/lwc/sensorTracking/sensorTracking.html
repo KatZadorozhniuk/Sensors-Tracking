@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Sensors">
+        <lightning-combobox
+            name="sensors"
+            label="Select Sensor"
+            value={selectedSensorId}
+            placeholder="Select a Sensor"
+            options={sensorOptions}
+            onchange={handleSensorChange}>
+        </lightning-combobox>
+
+        <template if:true={sensorEvents}>
+            <lightning-datatable
+                key-field="id"
+                data={sensorEvents}
+                columns={columns}
+                onsave={handleSave}>
+            </lightning-datatable>
+        </template>
+    </lightning-card>
+</template>
